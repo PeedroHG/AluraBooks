@@ -1,0 +1,156 @@
+.cabeçalho_menu-hamburguer {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/Menu.svg");
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cabeçalho {
+  background-color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container_imagem {
+  padding: 1em;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+  z-index: 2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.lista-menu_titulo,
+.lista-menu_item {
+  padding: 1em;
+  background-color: var(--branco);
+}
+
+.lista-menu_titulo {
+  color: var(--laranja);
+  font-weight: 700;
+}
+
+.lista-menu__link {
+  color: var(--azul);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.container_titulo,
+.opcoes {
+  display: none;
+}
+
+.cabeçalho-texto {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .cabeçalho {
+    padding: 0 4em;
+  }
+
+  .container_titulo,
+  .container_titulo-negrito {
+    font-family: var(--fonte-secundaria);
+    font-size: 30px;
+  }
+
+  .container_titulo {
+    display: block;
+    font-weight: 400;
+  }
+
+  .container_titulo-negrito {
+    font-weight: 700;
+  }
+
+  .opcoes {
+    display: flex;
+  }
+
+  .opcoes-item {
+    text-transform: uppercase;
+    padding: 1em;
+  }
+
+  .opcoes-link {
+    color: var(--preto);
+    text-decoration: none;
+  }
+
+  .cabeçalho_menu-hamburguer,
+  .container_transparente {
+    display: none;
+  }
+
+  .lista-menu {
+    width: auto;
+  }
+
+  .categorias:hover {
+    color: var(--branco);
+    padding: 1em;
+    background-color: var(--azul);
+  }
+
+  .lista-menu_item:hover {
+    background-color: var(--azul);
+  }
+
+  .lista-menu__link:hover {
+    color: var(--branco);
+  }
+
+  .container_sacola {
+    padding-right: 3em;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .cabeçalho-icones {
+    display: flex;
+  }
+  .cabeçalho-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .container_imagem,
+  .container_sacola {
+    padding-right: 0.5em;
+  }
+
+  .cabeçalho-texto {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--preto);
+  }
+
+  .opcoes {
+    margin: 0 auto 0 3em;
+  }
+
+  .cabeçalho {
+    padding: 0.7em 5em;
+  }
+
+  .container_imagem {
+    margin-left: 3em;
+  }
+}
